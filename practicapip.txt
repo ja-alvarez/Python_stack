@@ -1,0 +1,93 @@
+Microsoft Windows [Versión 10.0.18363.1316]
+(c) 2019 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\J-alv>python -m venv py3Env
+
+C:\Users\J-alv>call py3Env\Scripts\activate
+
+(py3Env) C:\Users\J-alv>pip list
+Package    Version
+---------- -------
+pip        20.2.3
+setuptools 49.2.1
+WARNING: You are using pip version 20.2.3; however, version 20.3.3 is available.
+You should consider upgrading via the 'c:\users\j-alv\py3env\scripts\python.exe -m pip install --upgrade pip' command.
+
+(py3Env) C:\Users\J-alv>deactivate
+
+C:\Users\J-alv>pip3 list
+Package           Version
+----------------- -------
+astroid           2.4.2
+colorama          0.4.4
+isort             5.7.0
+lazy-object-proxy 1.4.3
+mccabe            0.6.1
+pip               20.2.3
+pylint            2.6.0
+setuptools        49.2.1
+six               1.15.0
+toml              0.10.2
+wrapt             1.12.1
+WARNING: You are using pip version 20.2.3; however, version 20.3.3 is available.
+You should consider upgrading via the 'c:\users\j-alv\appdata\local\programs\python\python39-32\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\J-alv>call myEnvironments/py3Env/Scripts/activate
+"myEnvironments" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\J-alv>call py3Env/Scripts/activate
+
+(py3Env) C:\Users\J-alv>pip install django==1.11.9
+Collecting django==1.11.9
+  Downloading Django-1.11.9-py2.py3-none-any.whl (6.9 MB)
+     |████████████████████████████████| 6.9 MB 930 kB/s
+Collecting pytz
+  Downloading pytz-2020.5-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 1.3 MB/s
+Installing collected packages: pytz, django
+Successfully installed django-1.11.9 pytz-2020.5
+WARNING: You are using pip version 20.2.3; however, version 20.3.3 is available.
+You should consider upgrading via the 'c:\users\j-alv\py3env\scripts\python.exe -m pip install --upgrade pip' command.
+
+(py3Env) C:\Users\J-alv>pip freeze
+Django==1.11.9
+pytz==2020.5
+
+(py3Env) C:\Users\J-alv>pip freeze>requirements.txt
+
+(py3Env) C:\Users\J-alv>pip uninstall django
+Found existing installation: Django 1.11.9
+Uninstalling Django-1.11.9:
+  Would remove:
+    c:\users\j-alv\py3env\lib\site-packages\django-1.11.9.dist-info\*
+    c:\users\j-alv\py3env\lib\site-packages\django\*
+    c:\users\j-alv\py3env\scripts\django-admin.exe
+    c:\users\j-alv\py3env\scripts\django-admin.py
+Proceed (y/n)? pip show django
+Your response ('pip show django') was not one of the expected responses: y, n
+Proceed (y/n)? y
+  Successfully uninstalled Django-1.11.9
+
+(py3Env) C:\Users\J-alv>pip search Flask
+ERROR: Exception:
+Traceback (most recent call last):
+  File "c:\users\j-alv\py3env\lib\site-packages\pip\_internal\cli\base_command.py", line 228, in _main
+    status = self.run(options, args)
+  File "c:\users\j-alv\py3env\lib\site-packages\pip\_internal\commands\search.py", line 60, in run
+    pypi_hits = self.search(query, options)
+  File "c:\users\j-alv\py3env\lib\site-packages\pip\_internal\commands\search.py", line 80, in search
+    hits = pypi.search({'name': query, 'summary': query}, 'or')
+  File "C:\Users\J-alv\AppData\Local\Programs\Python\Python39-32\lib\xmlrpc\client.py", line 1116, in __call__
+    return self.__send(self.__name, args)
+  File "C:\Users\J-alv\AppData\Local\Programs\Python\Python39-32\lib\xmlrpc\client.py", line 1456, in __request
+    response = self.__transport.request(
+  File "c:\users\j-alv\py3env\lib\site-packages\pip\_internal\network\xmlrpc.py", line 45, in request
+    return self.parse_response(response.raw)
+  File "C:\Users\J-alv\AppData\Local\Programs\Python\Python39-32\lib\xmlrpc\client.py", line 1348, in parse_response
+    return u.close()
+  File "C:\Users\J-alv\AppData\Local\Programs\Python\Python39-32\lib\xmlrpc\client.py", line 662, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -32500: "RuntimeError: PyPI's XMLRPC API has been temporarily disabled due to unmanageable load and will be deprecated in the near future. See https://status.python.org/ for more information.">
+
+(py3Env) C:\Users\J-alv>
