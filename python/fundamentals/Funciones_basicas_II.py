@@ -34,7 +34,6 @@ print(y)
 # función devuelva False
 #Ejemplo: values_greater_than_second ([5,2,3,2,1,4]) debería imprimir 3 y devolver [5,3,4]
 #Ejemplo: values_greater_than_second ([3]) debería devolver False
-
 nuevalista = []
 def values_greater_than_second (x):
     for y in range(0, len(x)):
@@ -42,11 +41,15 @@ def values_greater_than_second (x):
             nuevalista.append(x[y])
     if len(nuevalista) > 2:
         print(len(nuevalista))
-        print(nuevalista)
+        return nuevalista
     else:
         return False
 x = values_greater_than_second([5,2,3,2,1,4])
+print(x)
 
+#objetos = [5,2,3,2,1,4]
+#for objeto in objetos:
+    #print(objeto)
 
 #5. Esta longitud, ese valor : escribe una función que acepte dos enteros como parámetros: tamaño y valor. La función
 # debe crear y devolver una lista cuya longitud es igual al tamaño dado y cuyos valores son todos los valores dados.
