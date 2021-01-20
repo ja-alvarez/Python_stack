@@ -1,5 +1,3 @@
-#Asignatura: Funciones Intermedias I
-
 import random
 def randInt(min=''   , max=''   ):
     num = random.random()

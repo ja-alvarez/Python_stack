@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2178db66-e65b-4ecd-a0e0-154f46a083ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/fundamentals/hello_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/fundamentals/hello_world.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,43 +15,26 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Python_stack$Funciones_basicas_II__1_.coverage" NAME="Funciones_basicas_II (1) Coverage Results" MODIFIED="1611094585644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/fundamentals" />
-    <SUITE FILE_PATH="coverage/Python_stack$Funciones_Intermedias_I.coverage" NAME="Funciones_Intermedias_I Coverage Results" MODIFIED="1611120934072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/fundamentals" />
+    <SUITE FILE_PATH="coverage/Python_stack$Funciones_Intermedias_I.coverage" NAME="Funciones_Intermedias_I Coverage Results" MODIFIED="1611122367709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/fundamentals" />
+    <SUITE FILE_PATH="coverage/Python_stack$Funciones_Intermedias_II.coverage" NAME="Funciones_Intermedias_II Coverage Results" MODIFIED="1611160113155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/fundamentals" />
+    <SUITE FILE_PATH="coverage/Python_stack$scratch_pyx.coverage" NAME="scratch.pyx Coverage Results" MODIFIED="1610818231435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/Python_stack$Funciones.coverage" NAME="Funciones Coverage Results" MODIFIED="1610832430320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_stack$ejercicio1.coverage" NAME="ejercicio1 Coverage Results" MODIFIED="1610665203790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_stack$hello_world.coverage" NAME="hello_world Coverage Results" MODIFIED="1610740307434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_stack$Ciclo_For_Basico_II.coverage" NAME="Ciclo_For_Basico_II Coverage Results" MODIFIED="1611109939446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/fundamentals" />
     <SUITE FILE_PATH="coverage/Python_stack$Funciones_basicas_II.coverage" NAME="Funciones_basicas_II Coverage Results" MODIFIED="1611011140110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_stack$for_loop_basic1.coverage" NAME="for_loop_basic1 Coverage Results" MODIFIED="1611013900862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_stack$scratch_pyx.coverage" NAME="scratch.pyx Coverage Results" MODIFIED="1610818231435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Python_stack$ejercicios2.coverage" NAME="ejercicios2 Coverage Results" MODIFIED="1610819600799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_stack$Funciones.coverage" NAME="Funciones Coverage Results" MODIFIED="1610832430320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_stack$ejercicio1.coverage" NAME="ejercicio1 Coverage Results" MODIFIED="1610665203790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_stack$Funciones_basicas_I.coverage" NAME="Funciones_basicas_I Coverage Results" MODIFIED="1610907670327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_stack$hello_world__1_.coverage" NAME="hello_world (1) Coverage Results" MODIFIED="1611109983505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/fundamentals" />
-    <SUITE FILE_PATH="coverage/Python_stack$hello_world.coverage" NAME="hello_world Coverage Results" MODIFIED="1610740307434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="61" lean-forward="true" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_basicas_II.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/fundamentals/Ciclo_For_Basico_II.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="150" column="17" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
+            <state relative-caret-position="177">
+              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -61,8 +42,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/fundamentals/hello_world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="279">
               <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/fundamentals/Ciclo_For_Basico_II.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_II.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="90" selection-start-line="90" selection-end-line="100" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -98,6 +97,7 @@
         <option value="$PROJECT_DIR$/python/fundamentals/Ciclo_For_Basico_II.py" />
         <option value="$PROJECT_DIR$/python/fundamentals/hello_world.py" />
         <option value="$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py" />
+        <option value="$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_II.py" />
       </list>
     </option>
   </component>
@@ -155,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Funciones_Intermedias_I">
+  <component name="RunManager" selected="Python.Funciones_Intermedias_II">
     <configuration name="Ciclo_For_Basico_II" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_stack" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,28 +178,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Funciones" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python_stack" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Funciones.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Funciones_Intermedias_I" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_stack" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,6 +192,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Funciones_Intermedias_II" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python_stack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/fundamentals" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_II.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,11 +378,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Funciones_Intermedias_II" />
         <item itemvalue="Python.Funciones_Intermedias_I" />
         <item itemvalue="Python.hello_world (1)" />
         <item itemvalue="Python.Ciclo_For_Basico_II" />
         <item itemvalue="Python.Funciones_basicas_II (1)" />
-        <item itemvalue="Python.Funciones" />
       </list>
     </recent_temporary>
   </component>
@@ -404,12 +404,12 @@
       <workItem from="1610818092910" duration="23905000" />
       <workItem from="1610983515956" duration="9870000" />
       <workItem from="1611014828753" duration="1042000" />
-      <workItem from="1611017881869" duration="35486000" />
+      <workItem from="1611017881869" duration="47287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82947000" />
+    <option name="totallyTimeSpent" value="94748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
@@ -420,7 +420,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32970452" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281493" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39968896" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,31 +501,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_basicas_II.py">
+    <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/fundamentals/hello_world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="279">
           <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/fundamentals/Ciclo_For_Basico_II.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="150" column="17" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
+        <state relative-caret-position="214">
+          <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_I.py">
+    <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_basicas_II.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="61" lean-forward="true" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        <state relative-caret-position="177">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/fundamentals/Funciones_Intermedias_II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="90" selection-start-line="90" selection-end-line="100" selection-end-column="36" />
         </state>
       </provider>
     </entry>
