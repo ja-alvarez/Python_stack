@@ -86,7 +86,7 @@ def minimo (x):
     if len(x)==0:
         return False
     else:
-        min = 0
+        min = x[0]
         for y in range (0, len(x)):
             if x[y]<min:
                 min = x[y]
