@@ -1,15 +1,41 @@
-#Mínimo : crea una función que tome una lista de números y devuelva el valor mínimo en la lista.
-# Si la lista está vacía, haga que la función devuelva False.
-#Ejemplo: mínimo ([37,2,1, -9]) debería devolver -9
-#Ejemplo: mínimo ([]) debería devolver False
-def minimo (x):
-    if len(x)==0:
-        return False
-    else:
-        min = x[0]
-        for y in range (0, len(x)):
-            if x[y]<min:
-                min = x[y]
-        return min
-x = minimo ([37,2,1, -9])
-print(x)#output: -9
+class BankAccount:
+    def __init__(self, account_number, int_rate):
+        self.account_number = account_number
+        self.int_rate = int_rate
+        self.balance = 0
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient balance")
+            self.balance -= 5
+        return self
+
+    def display_account_info(self):
+        print("BankAccount number:", self.account_number, ",", "Balance: $", self.balance)
+        return self
+
+    def yield_interest(self):
+        if self.balance>0:
+            self.balance += self.balance * self.int_rate
+        else:
+            self.balance = self.balance
+        return self.balance
+
+
+
+cuentauno = BankAccount(1234, 0.01)  # instancia de objeto
+cuentados = BankAccount(5678, 0.01)
+
+cuentauno.deposit(100).deposit(200).deposit(300).withdraw(150)
+cuentauno.yield_interest()
+cuentauno.display_account_info()
+
+cuentados.deposit(400).deposit(500).withdraw(50).withdraw(100).withdraw(150).withdraw(200)
+cuentados.yield_interest()
+cuentados.display_account_info()
