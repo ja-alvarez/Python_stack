@@ -1,8 +1,8 @@
 class BankAccount:
-    def __init__(self, account_number, int_rate):
+    def __init__(self, account_number, int_rate, balance):
         self.account_number = account_number
         self.int_rate = int_rate
-        self.balance = 0
+        self.balance = balance
 
     def deposit(self, amount):
         self.balance += amount
@@ -17,7 +17,7 @@ class BankAccount:
         return self
 
     def display_account_info(self):
-        print("BankAccount number:", self.account_number, ",", "Balance: $", self.balance)
+        print("BankAccount:", self.account_number, ",", "Balance: $", self.balance)
         return self
 
     def yield_interest(self):
@@ -29,11 +29,10 @@ class BankAccount:
 
 
 
-cuentauno = BankAccount(1234, 0.01)  # instancia de objeto
-cuentados = BankAccount(5678, 0.01)
+cuentauno = BankAccount(1234, 0.01,0)  # instancia de objeto
+cuentados = BankAccount(5678, 0.01,0)
 
-cuentauno.deposit(100).deposit(200).deposit(300).withdraw(150)
-cuentauno.yield_interest()
+cuentauno.deposit(100).deposit(200).deposit(300).withdraw(150).yield_interest()
 cuentauno.display_account_info()
 
 cuentados.deposit(400).deposit(500).withdraw(50).withdraw(100).withdraw(150).withdraw(200)
