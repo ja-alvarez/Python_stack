@@ -1,11 +1,12 @@
 import random
-def randInt(min=''   , max=''   ):
+def randInt(min=0  , max=100   ):
     num = random.random()
-    return num
+    num = num*(max-min) + min
+    return int(num)
 
-print(int(randInt()*100)) 		    # should print a random integer between 0 to 100
-print(int(randInt(max=50)*50)) 	    # should print a random integer between 0 to 50
-print(int(randInt(min=50)*50+50)) 	    # should print a random integer between 50 to 100
-print(int(randInt(min=50, max=500)*450+50))    # should print a random integer between 50 and 500
+print(randInt())		    # should print a random integer between 0 to 100
+print(randInt(max=50))	    # should print a random integer between 0 to 50
+print(randInt(min=50)) 	    # should print a random integer between 50 to 100
+print(randInt(min=50, max=500))    # should print a random integer between 50 and 500
 
 print("*"*80)
