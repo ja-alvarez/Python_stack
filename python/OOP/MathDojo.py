@@ -4,14 +4,16 @@ class MathDojo:
 
     def add(self, num, *nums):
         self.result +=num
-        for a in nums:
-            self.result += a
+        if len(nums)>0:
+            for a in nums:
+                self.result += a
         return self
 
     def subtract(self, num, *nums):
         self.result -=num
-        for a in nums:
-            self.result -= a
+        if len(nums)>0:
+            for a in nums:
+                self.result -= a
         return self
 
 md = MathDojo()
