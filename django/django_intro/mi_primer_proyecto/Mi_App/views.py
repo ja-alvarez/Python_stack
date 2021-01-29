@@ -14,10 +14,10 @@ def create (request):
     return redirect ('/')
 
 def show (request, _number):
-    return HttpResponse(f'SHOW marcador de posición para mostrar el blog numero: {int(_number)}')
+    return HttpResponse(f'SHOW marcador de posición para mostrar el blog numero: {_number}')
 
 def edit (request, _number):
-    return HttpResponse(f'EDIT marcador de posición para editar el blog {int(_number)}')
+    return HttpResponse(f'EDIT marcador de posición para editar el blog {_number}')
 
 def destroy (request, _number):
     return redirect('/blogs')

@@ -20,5 +20,3 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
 path('', include('Mi_App.urls')),
 ]
-
-
