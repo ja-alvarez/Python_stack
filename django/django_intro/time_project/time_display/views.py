@@ -3,7 +3,7 @@ from time import gmtime, strftime, localtime
 
 def index (request):
     context = {
-        "date": strftime("%b %d, %Y", localtime()), #("%b %d, %Y", gmtime()),
+        "date": strftime("%b %d, %Y", localtime()),
         "time": strftime("%H:%M %p", localtime())
     }
     return render (request, 'index.html', context)
