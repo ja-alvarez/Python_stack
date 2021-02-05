@@ -1,9 +1,9 @@
 from django.shortcuts import render, HttpResponse
-from time import gmtime, strftime
+from time import gmtime, strftime, localtime
 
 def index (request):
     context = {
-        "date": strftime("%b %d, %Y"), #("%b %d, %Y", gmtime()),
-        "time": strftime("%H:%M %p")
+        "date": strftime("%b %d, %Y", localtime()), #("%b %d, %Y", gmtime()),
+        "time": strftime("%H:%M %p", localtime())
     }
     return render (request, 'index.html', context)
