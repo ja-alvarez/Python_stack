@@ -2,9 +2,6 @@ from django.shortcuts import render, redirect, HttpResponse
 import random
 import string
 
-def some_function(request):
-    request.session['counter'] = 100
-
 def index (request):
     request.session['counter'] = 0
     return render (request, 'index.html')
@@ -18,10 +15,6 @@ def random_word (request):
         "word" : r_w.capitalize(),
     }
     return render(request,'index.html', context)
-
-#context = {
-#        "word": get_random_string(length=14)
-#    }
 
 def reset (request):
     request.session['counter'] = 0
