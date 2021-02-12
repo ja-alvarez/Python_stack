@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Gold</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+</head>
+
+<body>
+    <h2>Your Gold: <span id="goldamount">{{ request.session.gold }}</span></h2>
+    <button id="reset" onclick="location.href='/'">Reset</button>
+    <br>
+    <div id="farm">
+        <h3>Farm</h3>
+        <p class="earns">(earns 10-20 golds)</p>
+        <form action="process_money" method="post">
+            {% csrf_token %}
+            <button class="btn" name = "opcion" value = "farm"> Find Gold! </button>
+        </form>
+    </div>
+
+    <div id="cave">
+        <h3>Cave</h3>
+        <p class="earns">(earns 5-10 golds)</p>
+        <form action="process_money" method="post">
+            {% csrf_token %}
+            <button class="btn" name = "opcion" value = "cave"> Find Gold! </button>
+        </form>
+    </div>
+
+    <div id="house">
+        <h3>House</h3>
+        <p class="earns">(earns 2-5 golds)</p>
+        <form action="process_money" method="post">
+            {% csrf_token %}
+            <button class="btn" name = "opcion" value = "house"> Find Gold! </button>
+        </form>
+    </div>
+
+    <div id="casino">
+        <h3>Casino</h3>
+        <p class="earns">(earns/takes 0-50 golds)</p>
+        <form action="process_money" method="post">
+            {% csrf_token %}
+            <button class="btn" name = "opcion" value = "casino"> Find Gold! </button>
+        </form>
+    </div>
+
+    <p>Activities:</p>
+    <textarea rows="10" cols="30" id="activities">
+        {% for activity in request.session.output %}
+        {{activity}}
+        {% endfor %}
+    </textarea>
+
+</body>
+</html>

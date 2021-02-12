@@ -1,0 +1,43 @@
+* {
+    padding: 1%;
+}
+
+button#reset {
+    margin-left: 13px;
+}
+
+#goldamount {
+    border: 1px solid black;
+    width: 10%;
+    height: 8px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 21px;
+    padding-top: 2px;
+}
+
+#farm,
+#cave,
+#house,
+#casino {
+    border: 1px solid black;
+    width: 20%;
+    display: inline-block;
+    margin: 1%;
+}
+
+#activities {
+    width: 94%;
+    border: 1px solid black;
+    margin: 1%;
+}
+
+.btn {
+    box-shadow: 3px 3px;
+}
+
+h3,
+form,
+.earns {
+    text-align: center;
+}
