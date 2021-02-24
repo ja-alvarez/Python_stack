@@ -1,0 +1,40 @@
+Andres@Desk- MINGW32 /c/python_stack/django/django_orm/single_model_orm (master)
+$ python manage.py shell
+Python 3.9.2 (tags/v3.9.2:1a79785, Feb 19 2021, 13:44:55) [MSC v.1928 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.20.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from users_app.models import Users
+
+In [2]: Users.objects.create(first_name='Rick', last_name='Sanchez', email_address='rick@rickandmorty.com', age=70)
+Out[2]: id:1, Name:Rick Sanchez, email:rick@rickandmorty.com, age=70
+
+In [3]:  Users.objects.create(first_name='Morty', last_name='Smith', email_address='morty@rickandmorty.com', age=14)
+Out[3]: id:2, Name:Morty Smith, email:morty@rickandmorty.com, age=14
+
+In [4]: Users.objects.create(first_name='Squanchy', last_name='H', email_address='squanchy@rickandmorty.com', age=2)
+Out[4]: id:3, Name:Squanchy H, email:squanchy@rickandmorty.com, age=2
+
+In [5]: Users.objects.all()
+Out[5]: <QuerySet [id:1, Name:Rick Sanchez, email:rick@rickandmorty.com, age=70, id:2, Name:Morty Smith, email:morty@rickandmorty.com, age=14, id:3, Name:Squanchy H, email:squanchy@rickandmorty.com, age=2]>
+
+In [6]: Users.objects.last()
+Out[6]: id:3, Name:Squanchy H, email:squanchy@rickandmorty.com, age=2
+
+In [7]: Users.objects.first()
+Out[7]: id:1, Name:Rick Sanchez, email:rick@rickandmorty.com, age=70
+
+In [8]: updatename = Users.objects.get(id=3)
+In [9]: updatename.last_name = 'Pancakes'
+In [10]: updatename.save()
+
+In [11]: deluser = Users.objects.get(id=2)
+
+In [12]: deluser.delete()
+Out[12]: (1, {'users_app.Users': 1})
+
+In [13]: Users.objects.all().order_by('first_name')
+Out[13]: <QuerySet [id:1, Name:Rick Sanchez, email:rick@rickandmorty.com, age=70, id:3, Name:Squanchy Pancakes, email:squanchy@rickandmorty.com, age=2]>
+
+In [14]: Users.objects.all().order_by('-first_name')
+Out[14]: <QuerySet [id:3, Name:Squanchy Pancakes, email:squanchy@rickandmorty.com, age=2, id:1, Name:Rick Sanchez, email:rick@rickandmorty.com, age=70]>
