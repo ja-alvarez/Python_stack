@@ -1,0 +1,85 @@
+1. Consulta: crea 5 libros con los siguientes nombres: C Sharp, Java, Python, PHP, Ruby.
+    from books_authors_app.models import Book, Author
+    Book.objects.create(title='C Sharp')
+    Book.objects.create(title='Java')
+    Book.objects.create(title='Python')
+    Book.objects.create(title='PHP')
+    Book.objects.create(title='Ruby')
+
+2. Consulta: Crea 5 autores diferentes: Jane Austen, Emily Dickinson, Fyodor Dostoevksy, William Shakespeare, Lau Tzu.
+    Author.objects.create(first_name='Jane', last_name='Austen')
+    Author.objects.create(first_name='Emily', last_name='Dickinson')
+    Author.objects.create(first_name='Fyodor', last_name='Dostoevksy')
+    Author.objects.create(first_name='William', last_name='Shakespeare')
+    Author.objects.create(first_name='Lau', last_name='Tzu')
+
+
+3. Agregue un nuevo campo de texto en la tabla de autores llamado 'notas'.
+    class Author (models.Model):
+        notes = models.TextField(null=True)
+
+4. Cree y ejecute los archivos de migración para actualizar la tabla en su base de datos.
+    (djangopy3env)
+    Andres@Desk- MINGW32 /c/python_stack/django/django_orm/book_authors_proj (master)
+    $ python manage.py makemigrations
+    Migrations for 'books_authors_app':
+    books_authors_app\migrations\0002_author_notes.py
+        - Add field notes to author
+    (djangopy3env)
+    Andres@Desk- MINGW32 /c/python_stack/django/django_orm/book_authors_proj (master)
+    $ python manage.py migrate
+    Operations to perform:
+    Apply all migrations: admin, auth, books_authors_app, contenttypes, sessions
+    Running migrations:
+    Applying books_authors_app.0002_author_notes... OK
+
+5. Consulta: cambie el nombre del libro de C Sharp a C #.
+    updatebook1 = Book.objects.get(id=1)
+    updatebook1.title = 'C #'
+    updatebook1.save()
+
+6. Consulta: cambie el nombre del cuarto autor a Bill.
+    updateauthor4 = Author.objects.get(id=4)
+    updateauthor4.first_name = 'Bill'
+    updateauthor4.save()
+
+7. Consulta: Asigna el primer autor a los primeros 2 libros.
+    author1 = Author.objects.get(id=1)
+    book1 = Book.objects.get(id=1)
+    book2 = Book.objects.get(id=2)
+    author1.books.add(book1, book2)
+
+8. Consulta: Asigne el segundo autor a los primeros 3 libros.
+    author2 = Author.objects.get(id=2)
+    book3 = Book.objects.get(id=3)
+    author2.books.add(book1, book2, book3)
+
+9. Consulta: Asigna el tercer autor a los primeros 4 libros.
+    author3 = Author.objects.get(id=3)
+    book4 = Book.objects.get(id=4)
+    author3.books.add(book1, book2, book3, book4)
+
+10. Consulta: Asigne el cuarto autor a los primeros 5 libros (o en otras palabras, todos los libros).
+    author4 = Author.objects.get(id=4)
+    book5 = Book.objects.get(id=5)
+    author4.books.add(book1, book2, book3, book4, book5)
+
+11. Consulta: recupera a todos los autores del tercer libro.
+    book3.authors.all()
+    Out[4]: <QuerySet [Author_id=2, name=Emily Dickinson, books=books_authors_app.Book.None, notes=None, 
+    Author_id=3, name=Fyodor Dostoevksy, books=books_authors_app.Book.None, notes=None, 
+    Author_id=4, name=Bill Shakespeare, books=books_authors_app.Book.None, notes=None]>
+
+12. Consulta: eliminar al primer autor del tercer libro.
+    book3.authors.remove(author2)
+
+13. Consulta: Agregue el quinto autor como uno de los autores del segundo libro.
+    author5 = Author.objects.get(id=5)
+    author5.books.add(book2)
+
+14. Consulta: Encuentra todos los libros de los que el tercer autor es parte.
+    author3.books.all()
+    <QuerySet [Book_id=1, name=C #, desc=, Book_id=2, name=Java, desc=, Book_id=3, name=Python, desc=, Book_id=4, name=PHP, desc=]>
+
+15. Consulta: Encuentra todos los autores que contribuyeron al quinto libro.
+    book5.authors.all()
