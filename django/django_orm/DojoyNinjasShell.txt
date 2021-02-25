@@ -1,0 +1,85 @@
+1. Consulta: Crea 3 nuevos dojos
+
+    from dojo_ninjas_app.models import Dojo
+    Dojo.objects.create(name='Dojo1', city='Springfield', state='FL')
+    Dojo.objects.create(name='Dojo2', city='Orland', state='CA')
+    Dojo.objects.create(name='Dojo3', city='New York', state='NY')
+
+2. Consulta: elimina los 3 dojos que acaba de crear
+    dojo4 = Dojo.objects.get(id=4)
+    dojo5 = Dojo.objects.get(id=5)
+    dojo6 = Dojo.objects.get(id=6)
+    dojo4.delete()
+    dojo5.delete()
+    dojo6.delete()
+
+3. Consulta: Crea 3 dojos más (id= 7,8,9)
+    Dojo.objects.create(name='DojoA', city='Seattle', state='WA')
+    Dojo.objects.create(name='DojoB', city='Richmond', state='VA')
+    Dojo.objects.create(name='DojoC', city='Houston', state='TX')
+
+4. Consulta: crea 3 ninjas que pertenecen al primer dojo
+    from dojo_ninjas_app.models import Ninja
+    dojo1 = Dojo.objects.get(id=7)
+    ninja1 = Ninja.objects.create(first_name='Rick', last_name='Sanchez', dojo=dojo1)
+    ninja2 = Ninja.objects.create(first_name='Morty', last_name='Smith', dojo=dojo1)
+    ninja3 = Ninja.objects.create(first_name='Squanchy', last_name='Pancakes', dojo=dojo1)
+
+5. Consulta: crea 3 ninjas que pertenecen al segundo dojo
+    dojo2 = Dojo.objects.get(id=8)
+    ninja4 = Ninja.objects.create(first_name='Beth', last_name='Smith', dojo=dojo2)
+    ninja5 = Ninja.objects.create(first_name='Jerry', last_name='Smith', dojo=dojo2)
+    ninja6 = Ninja.objects.create(first_name='Summer', last_name='Smith', dojo=dojo2)
+
+6. Consulta: crea 3 ninjas que pertenecen al tercer dojo
+    dojo3 = Dojo.objects.get(id=9)
+    ninja7 = Ninja.objects.create(first_name='Doofus', last_name='Rick', dojo=dojo3)
+    ninja8 = Ninja.objects.create(first_name='Mini', last_name='Rick', dojo=dojo3)
+    ninja9 = Ninja.objects.create(first_name='Rick', last_name='Malvado', dojo=dojo3)
+
+7. Consulta: recupera todos los ninjas del primer dojo
+    dojos = Dojo.objects.get(id=7)
+    Ninja.objects.filter(dojo=dojos)
+    Out:<QuerySet [id=2, first_name=Rick, last_name=Sanchez, dojo=Dojo object (7), id=3, first_name=Morty, last_name=Smith, dojo=Dojo object (7), 
+    id=4, first_name=Squanchy, last_name=Pancakes, dojo=Dojo object (7)]>
+
+8. Consulta: recupera todos los ninjas del último dojo
+    dojos = Dojo.objects.get(id=9)
+    Ninja.objects.filter(dojo=dojos)
+    Out: <QuerySet [id=8, first_name=Doofus, last_name=Rick, dojo=Dojo object (9), id=9, first_name=Mini, last_name=Rick, dojo=Dojo object (9), 
+    id=10, first_name=Rick, last_name=Malvado, dojo=Dojo object (9)]>
+
+9. Consulta: recupera el último dojo del ninja**
+    from dojo_ninjas_app.models import Dojo, Ninja
+    Dojo.objects.last()
+    Out: id=9, name=DojoC, city=Houston, state=TX
+
+10. Agrega un nuevo campo de texto llamado "desc" a su clase de Dojo
+    class Dojo (models.Model):
+        name = models.CharField(max_length=255)
+        city = models.CharField(max_length=255)
+        state = models.CharField(max_length=2)
+        desc = models.TextField(default="dojo antiguo")
+        created_at = models.DateTimeField(auto_now_add=True)
+        updated_at = models.DateTimeField(auto_now=True)
+
+11. Crea y ejecuta los archivos de migración para actualizar la tabla en su base de datos. Si es necesario, proporcione un valor predeterminado de "dojo antiguo"
+    Andres@Desk- MINGW32 /c/python_stack/django/django_orm/dojo_ninjas_proj (master)
+    $ python manage.py makemigrations
+    Migrations for 'dojo_ninjas_app':
+    dojo_ninjas_app\migrations\0002_dojo_desc.py
+        - Add field desc to dojo
+    (djangopy3env)
+    Andres@Desk- MINGW32 /c/python_stack/django/django_orm/dojo_ninjas_proj (master)
+    $ python manage.py migrate
+    Operations to perform:
+    Apply all migrations: admin, auth, contenttypes, dojo_ninjas_app, sessions
+    Running migrations:
+    Applying dojo_ninjas_app.0002_dojo_desc... OK
+    (djangopy3env)
+
+12. Consulta: crear un nuevo dojo
+    $ python manage.py shell
+    from dojo_ninjas_app.models import Dojo, Ninja
+    Dojo.objects.create(name='DojoD', city='Montgomery', state='AL')
+    Out: id=10, name=DojoD, city=Montgomery, state=AL
