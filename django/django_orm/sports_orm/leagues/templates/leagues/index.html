@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sports Leagues</title>
+</head>
+
+<body>
+    <h2>Leagues</h2>
+
+    <h3>1. All baseball leagues:</h3>
+    <ol>
+        {% for baseball in baseball_leagues %}
+        <li>{{baseball.name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>2. All womens' leagues:</h3>
+    <ol>
+        {% for women in women_leagues %}
+        <li>{{women.name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>3. All leagues where sport is any type of hockey:</h3>
+    <ol>
+        {% for hockey in typeofhockey %}
+        <li>{{hockey.name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>4. All leagues where sport is something OTHER THAN football:</h3>
+    <ol>
+        {% for notfootball in othersports %}
+        <li>{{notfootball.name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>5. All leagues that call themselves "conferences":</h3>
+    <ol>
+        {% for conference in conferences %}
+        <li>{{conference.name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>6. All leagues in the Atlantic region:</h3>
+    <ol>
+        {% for atlantic in atlanticregion %}
+        <li>{{atlantic.name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>7. All teams based in Dallas:</h3>
+    <ol>
+        {% for teams in teamsindallas %}
+        <li>{{teams.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>8. All teams named the Raptors:</h3>
+    <ol>
+        {% for raptor in raptors %}
+        <li>{{raptor.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>9. All teams whose location includes "City":</h3>
+    <ol>
+        {% for loc in city %}
+        <li>{{loc.location}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>10. All teams whose names begin with "T":</h3>
+    <ol>
+        {% for t in teams2 %}
+        <li>{{t.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+
+    <h3>11. All teams, ordered alphabetically by location:</h3>
+    <ol>
+        {% for order in orderedteam %}
+        <li>Team name: {{order.team_name}} location: {{order.location}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>12. All teams, ordered by team name in reverse alphabetical order:</h3>
+    <ol>
+        {% for rev in reverse %}
+        <li>Team name: {{rev.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>13. All players with last name "Cooper" :</h3>
+    <ol>
+        {% for coop in cooper %}
+        <li>{{coop.first_name}} {{coop.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>14. Every player with first name "Joshua":</h3>
+    <ol>
+        {% for joshua in firstname %}
+        <li>{{joshua.first_name}} {{joshua.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>15. Every player with last name "Cooper" EXCEPT FOR Joshua:</h3>
+    <ol>
+        {% for coop2 in notjoshua %}
+        <li>{{coop2.first_name}} {{coop2.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>16. All players with first name "Alexander" OR first name "Wyatt":</h3>
+    <ol>
+        {% for n in alexanderwyatt %}
+        <li>{{n.first_name}} {{n.last_name}}</li>
+        {% endfor %}
+    </ol>
+</body>
+
+
+
+</html>
