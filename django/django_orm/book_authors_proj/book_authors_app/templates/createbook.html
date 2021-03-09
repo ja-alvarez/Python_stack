@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% block title%} Books {%endblock%} {% block content%}
+
+<h1 id="add">Add a Book</h1>
+<div class="container">
+    <div class="row">
+        <div id="formulario" class="col-sm">
+            <form action="/add_book" method="POST">
+                {% csrf_token %}
+                <label>Title</label><br>
+                <input id="l1" type="text" name="newbookname"> <br>
+                <label>Description</label><br>
+                <textarea id="l2" type="text" name="newbookdesc" rows="5" cols="64">
+
+                </textarea>
+
+                <br>
+                <button class="btn btn-success" name="opcion" value="add" type="submit"> Add Book </button>
+            </form>
+        </div>
+        <div class="col-sm">
+            <div id="tabla">
+                <table table-layout: fixed>
+                    <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th>Title</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for books in books %}
+                        <tr>
+                            <td>{{books.id}}</td>
+                            <td>{{books.title}}</td>
+                            <td><a href="books/{{ books.id }}">View</a></td>
+                            <!-- Falta definir url books/<int>-->
+                            <!-- Link plantilla-->
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}
+
+
+
+
+
+<!--
+    
+    <button id="reset" onclick="location.href='/'">Reset</button>
+    <br>
+    <div id="farm">
+        <h3>Farm</h3>
+        <p class="earns">(earns 10-20 golds)</p>
+        <form action="process_money" method="post">
+            {% csrf_token %}
+            <button class="btn" name="opcion" value="farm"> Find Gold! </button>
+        </form>
+    </div>
+    <p>Activities:</p>
+    <textarea rows="10" cols="30" id="activities">
+            {% for activity in request.session.output %}
+            {{activity}}
+            {% endfor %}
+        </textarea>
+        -->

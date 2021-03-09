@@ -1,0 +1,56 @@
+* {
+    font-family: arial, sans-serif;
+    outline: 1px dotted red;
+}
+
+h1 {
+    padding-left: 10%;
+}
+
+h2 {
+    color: black;
+}
+
+table {
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+    /*width: fit-content; */
+    /*width: auto; */
+    /*overflow: auto; */
+}
+
+input#l1 {
+    width: 98%;
+}
+
+
+/*margin-left: 15%;
+    margin-bottom: 1%;
+
+#l2 {
+    margin-left: 4%;
+    height: 40px;
+    margin-bottom: 1%;
+} */
+
+#formulario {
+    width: 49%;
+    display: inline-block;
+    height: auto;
+}
+
+.btn {
+    margin-left: 23%;
+}
+
+
+/*
+#tabla {
+    display: inline-block;
+    width: 49%;
+} */
