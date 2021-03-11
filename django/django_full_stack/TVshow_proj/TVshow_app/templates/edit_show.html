@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %} TV Shows | Edit Shows {% endblock %} {% block content %}
+<a href="/" id="upperlink">Go Back</a>
+<h1>Edit Show</h1>
+<form action="/shows/{{editshow.id}}/update" class="flex-col" method="POST">
+    {% csrf_token%}
+    <label>Title</label>
+    <input type="text" name="title" placeholder="{{ editshow.title }}"> <br>
+    <label>Network</label>
+    <input type="text" name="network" placeholder="{{ editshow.network }}">
+    <label>Release date</label>
+    <input type="date" name="release_date"> <br>
+    <label>Description</label>
+    <textarea name="description" class="textarea" placeholder="{{ editshow.description }}"></textarea> <br>
+    <input type="submit" class="btn btn-success" value="Update">
+</form>
+<a href="/shows/{{editshow.id}}">Go to Show</a> {% endblock %}
