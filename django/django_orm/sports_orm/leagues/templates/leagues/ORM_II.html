@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sports Leagues - ORM II</title>
+</head>
+
+<body>
+    <h3>Leagues</h3>
+    {% for l in leagues %}
+    <li>id: {{l.id}}, league name: {{l.name}}, sport: {{l.sport}}</li>
+    {% endfor %}
+    <h3>Teams</h3>
+    {% for t in teams %}
+    <li>id: {{t.id}}, location: {{t.location}}, team name: {{t.team_name}}, league: {{t.league}}</li>
+    {% endfor %}
+    <h3>Players</h3>
+    {% for p in players %}
+    <li>id: {{p.id}}, first&last name: {{p.first_name}} {{p.last_name}}, current team: {{p.curr_team}}, all teams: {{p.all_teams}}</li>
+    {% endfor %}
+
+    <h2>Sports ORM II</h2>
+
+    <h3>1. Find all teams in the Atlantic Soccer Conference:</h3>
+    <ol>
+        {% for teams in atlanticsoccer %}
+        <li>{{teams.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>2. Find all (current) players on the Boston Penguins:</h3>
+    <ol>
+        {% for players in atlanticsoc2 %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+
+    <h3>3. Find all (current) players in the International Collegiate Baseball Conference:</h3>
+    <ol>
+        {% for players in intcollegiate %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>4. Find all (current) players in the American Conference of Amateur Football with last name "Lopez":</h3>
+    <ol>
+        {% for players in amconference %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>5. Find all football players:</h3>
+    <ol>
+        {% for players in allfootballplayers %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>6. Find all teams with a (current) player named "Sophia":</h3>
+    <ol>
+        {% for sophia in sophiateams %}
+        <li>{{sophia.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>7. Find all leagues with a (current) player named "Sophia":</h3>
+    <ol>
+        {% for sophia in sophialeagues %}
+        <li>{{sophia.name}}</li>
+        {% endfor %}
+    </ol>
+
+
+    <h3>8. Find everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders:</h3>
+    <ol>
+        {% for flores in floresnotwashington %}
+        <li>{{flores.first_name}} {{flores.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>9. Find all teams, past and present, that Samuel Evans has played with:</h3>
+    <ol>
+        {% for evans in evanteams %}
+        <li>{{evans.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>10. Find all players, past and present, with the Manitoba Tiger-Cats:</h3>
+    <ol>
+        {% for players in tigerplayers %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>11. Find all players who were formerly (but aren't currently) with the Wichita Vikings:</h3>
+    <ol>
+        {% for players in formerlywichita %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>12. Find every team that Jacob Gray played for before he joined the Oregon Colts:</h3>
+    <ol>
+        {% for teams in jacobgray %}
+        <li>{{teams.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>13. Find everyone named "Joshua" who has ever played in the Atlantic Federation of Amateur Baseball Players:</h3>
+    <ol>
+        {% for joshua in atlanticbaseball %}
+        <li>{{teams.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>14. Find all teams that have had 12 or more players, past and present:</h3>
+    <ol>
+        {% for teams in twelveplayers %}
+        <li>{{teams.team_name}}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>15. Show all players, sorted by the number of teams they've played for:</h3>
+    <ol>
+        {% for players in numberofteams %}
+        <li>{{players.first_name}} {{players.last_name}}</li>
+        {% endfor %}
+    </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
