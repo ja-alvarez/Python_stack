@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block title %} {{show.title}} {% endblock %} {% block content %}
+<a href="/" id="upperlink">Go Back</a>
+<h1>TV Show {{show.id}}</h1>
+<p> Title: {{ show.title }}</p>
+<p> Network: {{ show.network }}</p>
+<p> Release Date: {{ show.release_date }}</p>
+<p> Description: {{ show.description }}</p> <br>
+<p>Last Updated: {{ show.updated_at }}</p>
+<a href="/shows/{{show.id}}/edit">Edit</a> | <a href="/shows/{{show.id}}/destroy">Delete</a> {% endblock %}
