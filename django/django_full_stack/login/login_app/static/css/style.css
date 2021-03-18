@@ -1,0 +1,14 @@
+div {
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.messages {
+    color: red;
+}

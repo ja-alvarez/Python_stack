@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Login & Registration </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div id="signup" class="col">
+        <h2>Registration</h2>
+        <form action="/register/" class="flex-col" method="POST">
+            {% csrf_token %}
+            <label for="name">First Name</label><br>
+            <input type="text" name="first_name"><br>
+            <label for="last_name">Last Name</label><br>
+            <input type="text" name="last_name"><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password"><br>
+            <label for="confirmpassword">Confirm PW</label><br>
+            <input type="password" name="confirmpassword"><br>
+            <input type="submit" class="form-btn bold" value="Register">
+        </form>
+    </div>
+    <div id="signin" class="col">
+        <h2>Login</h2>
+        <form action="login/" class="flex-col" method="POST">
+            {% csrf_token %}
+            <label for="email">Email</label><br>
+            <input type="text" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password"><br>
+            <input type="submit" class="form-btn bold" value="Log in">
+        </form>
+    </div>
+</body>
+
+</html>
